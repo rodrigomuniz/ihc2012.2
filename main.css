@@ -19,5 +19,16 @@ section {
 }
 #aulas {margin-top: 0;}
 .nav i {vertical-align: middle;}
+.accordion-inner .btn i  {vertical-align: baseline;}
 .alert ul li {margin: 8px 0;}
 .alert i {vertical-align: bottom;}
+dd {margin-bottom: 15px}
+.accordion-heading {background-color: #08c;}
+.accordion-heading h3 a {color: #fff;}
+
+@media (max-width: 480px) {
+	.fixed {
+		position: static;
+		top: auto;
+	}
+}
