@@ -4,8 +4,41 @@ Portanto, não me responsabilizo por alguma coisa tosca
 Se falar mal do código desse site na aula leva -2 pontos :P
  */
 body {
-	padding-top: 60px;
+	padding-top: 30px;
 	padding-bottom: 40px;
+	border-top: 10px solid #0088CC;
+}
+.nav .active a, 
+.nav .active a:hover {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .165);
+}
+
+.sidebar-nav .alert {
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .165);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .165);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	opacity: .5;
+	-webkit-transition: opacity linear .2s;
+	-moz-transition: opacity linear .2s;
+	-o-transition: opacity linear .2s;
+	-ms-transition: opacity linear .2s;
+	transition: opacity linear .2s;
+}
+.sidebar-nav .alert:hover {
+	opacity: 1
+}
+
+h1 {font-size: 30px; color: #3A87AD}
+h1 .pull-right {line-height: 40px }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight: normal;
 }
 
 .fixed {
@@ -23,8 +56,21 @@ section {
 .alert ul li {margin: 8px 0;}
 .alert i {vertical-align: bottom;}
 dd {margin-bottom: 15px}
-.accordion-heading {background-color: #08c;}
-.accordion-heading h3 a {color: #fff;}
+
+.accordion-heading h4 {margin: 0;}
+.accordion-heading .accordion-toggle {
+	background-color: #ECF6FB;
+	padding: 12px 15px;
+}
+.accordion-heading h4 a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.page-header small {
+	vertical-align: baseline;
+	font-size: 14px;
+}
 
 @media (max-width: 480px) {
 	.fixed {
